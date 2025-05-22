@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Preview Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('facebook')">Facebook</button>
+    <!-- Add more buttons for other platforms -->
+  </div>
+
+  <div class="content" id="facebook">
+    <div class="preview-tabs">
+      <div class="tab-item">
+        <img src="https://via.placeholder.com/150" alt="Profile" class="preview-image" />
+        <p>Profile Picture</p>
+      </div>
+      <div class="tab-item">
+        <img src="https://via.placeholder.com/400x150" alt="Cover" class="preview-image" />
+        <p>Cover Photo</p>
+      </div>
+      <div class="tab-item">
+        <img src="https://via.placeholder.com/1080x1920" alt="Story" class="preview-image" />
+        <p>Story</p>
+      </div>
+    </div>
+
+    <div class="video-size">
+      <span class="divider">|</span>
+      <button class="size-button" onclick="toggleVideoSizes()">Video Size</button>
+    </div>
+
+    <div class="video-guidelines" id="video-guidelines" style="display: none;">
+      <h4>📏 Facebook Video Size Guidelines</h4>
+      <ul>
+        <li><strong>Feed Video:</strong> 1280 × 720 px (16:9)</li>
+        <li><strong>Story/Reel:</strong> 1080 × 1920 px (9:16)</li>
+        <li><strong>Cover Video:</strong> 820 × 462 px (1.91:1)</li>
+        <li><strong>Max File Size:</strong> 4 GB</li>
+        <li><strong>Max Length:</strong> 240 minutes (Feed), 90 seconds (Stories)</li>
+        <li><strong>Formats:</strong> MP4 or MOV</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
